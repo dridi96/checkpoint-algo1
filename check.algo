@@ -1,0 +1,22 @@
+ALGORITHM check
+VAR
+   i,v : INTEGER:=0;
+   w : INTEGER:=1;
+   s:STRING;
+
+BEGIN
+   Write("sentance s.");
+   Read(s);
+   WHILE (s[i]<>".") DO
+     IF (s[i]=" ") THEN
+      w:=w+1;
+     END_IF
+     IF (s[i]="a"OR s[i]="e"OR s[i]="o"OR s[i]="i"OR s[i]="u"OR s[i]="y" ) THEN
+      v:=v+1;
+     END_IF
+     i:= i+1;
+   END_WHILE
+   Write("the length of the sentance is , i");
+   Write("the number of words in the sentance is , w");
+   Write("the number of vowels in the sentance is , v");
+END
